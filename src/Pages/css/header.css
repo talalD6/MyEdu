@@ -1,8 +1,8 @@
 .navmenu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 .logo{
@@ -28,7 +28,7 @@
 
 .primarybtn{
     background: var(--gradiant);
-    padding: 19px 31px;
+    padding: 15px 30px;
     border: none;
     color: #fff;
     border-radius: 15px;
@@ -77,6 +77,30 @@
     cursor: pointer;
 }
 
+.navLinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+.dropdown{
+    position: absolute;
+    color: #3b4661c6;
+    margin-left: -20px;
+    width: 160px;
+    padding: 0 20px 20px 20px;
+}
+
+.dropdownCategory{
+    font-size: 17px;
+}
+
+.hidden{
+    display: none;
+}
+
 .search{
     display: flex;
     justify-content: space-between;
@@ -91,4 +115,16 @@
 .search-input{
     border: none;
     outline: none;
+}
+
+.relative{
+    position: relative;
+}
+
+.category{
+    margin-top: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

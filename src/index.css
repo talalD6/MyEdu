@@ -4,7 +4,9 @@
 
 :root{
   --green:#2AAA94;
-  --black:#1B2336;
+  --title-color:#0C0531;
+  --text-color:#4E596B;
+  --text-color-light:rgb(143, 149, 158);
   --gradiant:linear-gradient(0.25turn, #083F9B,#7F56D9);
   --fontsaira : "Saira", sans-serif;
   --fontrowdies :"Rowdies", sans-serif;
@@ -24,8 +26,10 @@ html {
 body,
 button,
 input,
-textarea {
+textarea,h4 {
+  font-weight: 400;
   font-family: var(--fontsaira);
+  color: var(--text-color);
 }
 
 
@@ -33,7 +37,7 @@ h1,
 h2,
 h3 {
   font-family: var(--fontrowdies);
-
+  color: var(--title-color);
 }
 
 ul {
@@ -61,17 +65,18 @@ img {
 }
 
 .section_title {
-  color: var(--black);
+  color: var(--title-color);
 }
 
 .section_subtitle {
   display: block;
   font-size: var(--small-font-size);
+  margin-top: 20px;
   margin-bottom: 4rem;
 }
 
-.section__title,
-.section__subtitle {
+.section_title,
+.section_subtitle {
   text-align: center;
 }
 
@@ -80,4 +85,8 @@ img {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.green{
+  color: var(--green);
 }
